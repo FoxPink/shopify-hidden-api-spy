@@ -35,6 +35,8 @@ This Actor takes a different approach: it calls Shopify's **internal JSON API** 
 - **Installed Apps Detection** — scans homepage for 20+ known Shopify app scripts (Yotpo, Klaviyo, Gorgias, etc.)
 - **Store Metadata** — fetches shop name, currency, country, locale via `/meta.json`
 - **Proxy Fallback** — transparently falls back to Apify residential proxy on 403/429
+- **Tech Stack Detection** — identifies the Shopify theme framework and detects front-end technologies (React, Alpine, Tailwind, etc.) via script analysis.
+- **Payment Detection** — detects installed payment gateways (Shopify Payments, PayPal, Stripe, Klarna, etc.) from storefront script tags and checkout hints.
 
 ## Use Cases
 
