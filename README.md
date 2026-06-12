@@ -79,6 +79,32 @@ curl -X POST https://api.apify.com/v2/acts/foxpink~shopify-hidden-api-spy/runs \
 
 ---
 
+## Why FoxPink?
+
+| vs. Competitor | Their Price | Our Price | Advantage |
+|----------------|-------------|-----------|-----------|
+| autofacts/shopify | $5/month + usage | **$0.01/1k** | **No subscription, pay-per-use** |
+| scrapebase/shopify-store-scraper | $3.99/1k | **$0.01/1k** | **399x cheaper** |
+| benthepythondev/shopify-store-scraper | $4.00/1k | **$0.01/1k** | **400x cheaper** |
+
+**Unique features they don't have:** hidden JSON API (zero-DOM, never breaks), `hasSale`/`compareAtPrice`/`discountPercent` analytics, password detection, `collectionUrlFilter`.
+
+---
+
+## FoxPink Studio Ecosystem
+
+Combine with other FoxPink actors for a complete data pipeline:
+
+| Actor | Purpose | Price |
+|-------|---------|-------|
+| [Email Enricher+](https://apify.com/foxpink/email-enricher-plus) | Email verification & spam trap detection | $0.01/1k |
+| [RAG Markdown Chunker](https://apify.com/foxpink/apify-rag-markdown-chunker) | HTML→MD→Chunk→Embed pipeline | $0.01/1k |
+| [Odoo Market Intel](https://apify.com/foxpink/odoo-apps-market-intelligence) | Odoo Apps Store scraper & analysis | $0.05/1k |
+
+**Workflow example:** Shopifu → scrape products → Email → enrich customer contacts → analyze pricing trends.
+
+---
+
 ## Compatibility
 
 - 100% Node.js (18+)
